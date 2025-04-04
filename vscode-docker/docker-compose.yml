@@ -1,0 +1,18 @@
+services:
+  vscode:
+    image: codercom/code-server:latest
+    container_name: vscode-container
+    ports:
+      - "8080:8080" # Expose VS Code on port 8080
+    volumes:
+      - ./workspace:/home/coder/project # Mount local workspace directory
+    environment:
+      - PASSWORD=yourpassword # Set a password for accessing VS Code
+    restart: unless-stopped
+    networks:
+      - vscode-net
+
+networks:
+  vscode-net:
+    driver: bridge
+

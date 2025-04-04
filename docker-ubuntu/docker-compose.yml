@@ -1,0 +1,14 @@
+services:
+  ubuntu-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: empty-ubuntu
+    # Enable interactive mode
+    stdin_open: true
+    tty: true
+    # Mount a volume for persistent storage (optional)
+    volumes:
+      - ./data:/app/data
+    # Restart policy
+    restart: unless-stopped
