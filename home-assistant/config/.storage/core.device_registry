@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 9,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {"area_id":null,"config_entries":["01JRD7FYJ35BCQYXJYEBJQDN6J"],"config_entries_subentries":{"01JRD7FYJ35BCQYXJYEBJQDN6J":[null]},"configuration_url":null,"connections":[],"created_at":"2025-04-09T12:13:12.645345+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"f92f96587772b774ee7ede82b55525be","identifiers":[["sun","01JRD7FYJ35BCQYXJYEBJQDN6J"]],"labels":[],"manufacturer":null,"model":null,"model_id":null,"modified_at":"2025-04-09T12:13:12.645381+00:00","name_by_user":null,"name":"Sun","primary_config_entry":"01JRD7FYJ35BCQYXJYEBJQDN6J","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["01JRD7FYX0F1T2F4ZY2ES7TFZN"],"config_entries_subentries":{"01JRD7FYX0F1T2F4ZY2ES7TFZN":[null]},"configuration_url":"homeassistant://config/backup","connections":[],"created_at":"2025-04-09T12:13:13.014734+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"a14053e9f9c2fc37423478508e8ff81a","identifiers":[["backup","backup_manager"]],"labels":[],"manufacturer":"Home Assistant","model":"Home Assistant Backup","model_id":null,"modified_at":"2025-04-09T12:13:13.014778+00:00","name_by_user":null,"name":"Backup","primary_config_entry":"01JRD7FYX0F1T2F4ZY2ES7TFZN","serial_number":null,"sw_version":"2025.4.1","via_device_id":null},
+      {"area_id":null,"config_entries":["01JRD7JKTXHZNK82D5CHSE70RM"],"config_entries_subentries":{"01JRD7JKTXHZNK82D5CHSE70RM":[null]},"configuration_url":"https://www.met.no/en","connections":[],"created_at":"2025-04-09T12:14:40.364537+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"940227fbef57b27985341e0fd1c2890c","identifiers":[["met","01JRD7JKTXHZNK82D5CHSE70RM"]],"labels":[],"manufacturer":"Met.no","model":"Forecast","model_id":null,"modified_at":"2025-04-09T12:14:40.364569+00:00","name_by_user":null,"name":"Forecast","primary_config_entry":"01JRD7JKTXHZNK82D5CHSE70RM","serial_number":null,"sw_version":null,"via_device_id":null}
+    ],
+    "deleted_devices": []
+  }
+}

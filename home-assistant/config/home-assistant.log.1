@@ -1,0 +1,24 @@
+2025-04-09 13:16:07.281 ERROR (MainThread) [homeassistant.components.tts] Error getting audio for Hello mohamed souilmi, you can p…: No authentication found
+2025-04-09 13:16:07.319 ERROR (MainThread) [homeassistant.components.tts] Error streaming tts: No authentication found
+2025-04-09 13:16:19.911 ERROR (MainThread) [homeassistant.components.tts] Error getting audio for Hello mohamed souilmi, you can p…: No authentication found
+2025-04-09 13:16:19.933 ERROR (MainThread) [homeassistant.components.tts] Error streaming tts: No authentication found
+2025-04-09 13:16:40.625 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140148805406000] Error handling message: Unknown error (unknown_error) mohamed souilmi from 172.21.224.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/usr/src/homeassistant/homeassistant/components/media_source/__init__.py", line 185, in websocket_browse_media
+    media = await async_browse_media(hass, msg.get("media_content_id", ""))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/media_source/__init__.py", line 133, in async_browse_media
+    item = await _get_media_item(hass, media_content_id, None).async_browse()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/media_source/models.py", line 79, in async_browse
+    return await self.async_media_source().async_browse_media(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/radio_browser/media_source.py", line 76, in async_browse_media
+    radios = self.radios
+             ^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/radio_browser/media_source.py", line 53, in radios
+    return self.entry.runtime_data
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigEntry' object has no attribute 'runtime_data'

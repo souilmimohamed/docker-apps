@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "mohamed_souilmi",
+        "name": "mohamed souilmi",
+        "user_id": "321d157313e44e8480ad743ee83951a3",
+        "device_trackers": []
+      }
+    ]
+  }
+}
