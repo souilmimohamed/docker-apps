@@ -1,0 +1,15 @@
+services:
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=1000        # Your user ID
+      - PGID=1000        # Your group ID
+      - TZ=Europe/Paris  # Change to your timezone
+    volumes:
+      - ./config:/config
+      - ./tv:/tv
+      - ./downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
