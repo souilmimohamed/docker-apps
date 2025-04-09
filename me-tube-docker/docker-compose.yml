@@ -1,0 +1,9 @@
+services:
+  metube:
+    image: ghcr.io/alexta69/metube
+    container_name: metube
+    ports:
+      - "8081:8081"  # change the host port if needed
+    volumes:
+      - ./downloads:/downloads  # downloads will be saved here
+    restart: unless-stopped
