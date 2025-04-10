@@ -1,0 +1,13 @@
+services:
+  android-emulator:
+    image: grichner/docker-android-x86-11.0
+    privileged: true
+    ports:
+      - "6080:6080"
+      - "5554:5554"
+      - "5555:5555"
+    environment:
+      - DEVICE=Samsung Galaxy S10
+      - RESOLUTION=1080x1920
+      - DPI=480
+      - CONNECT_TO_GRID=false
