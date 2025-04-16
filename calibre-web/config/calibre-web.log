@@ -1,0 +1,129 @@
+[2025-04-16 10:00:30,941]  WARN {cps.config_sql:364} Log path /config/calibre-web.log not valid, falling back to default
+[2025-04-16 10:00:30,952]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:00:30,955]  WARN {cps.config_sql:400} invalidating configuration
+[2025-04-16 10:00:30,956]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:00:31,840]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:00:31,841]  WARN {cps.config_sql:400} invalidating configuration
+[2025-04-16 10:00:31,841]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:00:31,861]  INFO {cps:178} Starting Calibre Web...
+[2025-04-16 10:00:32,114]  WARN {py.warnings:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2025-04-16 10:00:32,248]  INFO {apscheduler.scheduler:181} Scheduler started
+[2025-04-16 10:00:32,249]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2025-04-16 10:00:32,249]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2025-04-16 10:00:32,249]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2025-04-16 10:00:32,250]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2025-04-16 10:00:32 UTC], next run at: 2025-04-16 10:00:32 UTC)" (scheduled at 2025-04-16 10:00:32.249470+00:00)
+[2025-04-16 10:00:32,250]  INFO {apscheduler.scheduler:641} Removed job c0b2c4283ceb4d088cd9eb40c5112f88
+[2025-04-16 10:00:32,265]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2025-04-16 10:00:32 UTC], next run at: 2025-04-16 10:00:32 UTC)" executed successfully
+[2025-04-16 10:00:32,379]  INFO {cps.ub:764} github Blueprint Created
+[2025-04-16 10:00:32,383]  INFO {cps.ub:764} google Blueprint Created
+[2025-04-16 10:00:33,564]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2025-04-16 10:00:59,315] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:00:59,316]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:01:51,581] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:01:51,593]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:01:53,731] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:01:53,731]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:01:54,895] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:01:54,895]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:01:55,776] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:01:55,776]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:05:31,516] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:05:31,516]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:05:32,860] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:05:32,860]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:05:33,628] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:05:33,629]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:05:34,451] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:05:34,451]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:05:35,066] ERROR {cps.admin:1917} DB Location is not Valid, Please Enter Correct Path
+[2025-04-16 10:05:35,066]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:09:04,284]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:09:04,290]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:09:37,393]  INFO {cps.shelf:347} Shelf My-shelf created
+[2025-04-16 10:09:49,371]  INFO {cps.ub:764} successfully deleted Shelf My-shelf
+[2025-04-16 10:13:08,473]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:13:08,474]  INFO {cps.server:319} webserver stop (restart=True)
+[2025-04-16 10:13:08,475]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
+[2025-04-16 10:13:09,495]  INFO {cps.server:301} Performing restart of Calibre-Web
+[2025-04-16 10:13:10,394]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:13:10,427]  INFO {cps:178} Starting Calibre Web...
+[2025-04-16 10:13:10,870]  WARN {py.warnings:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2025-04-16 10:13:11,048]  INFO {apscheduler.scheduler:181} Scheduler started
+[2025-04-16 10:13:11,048]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2025-04-16 10:13:11,049]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2025-04-16 10:13:11,049]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2025-04-16 10:13:11,050]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2025-04-16 10:13:11 UTC], next run at: 2025-04-16 10:13:11 UTC)" (scheduled at 2025-04-16 10:13:11.049321+00:00)
+[2025-04-16 10:13:11,050]  INFO {apscheduler.scheduler:641} Removed job 5d5232d293c74bd98b12ea9998a9d834
+[2025-04-16 10:13:11,052]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2025-04-16 10:13:11 UTC], next run at: 2025-04-16 10:13:11 UTC)" executed successfully
+[2025-04-16 10:13:12,085]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2025-04-16 10:13:20,162]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:16:30,320] ERROR {cps.editbooks:167} Database error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO authors (name, sort, link) VALUES (?, ?, ?)]
+[parameters: ('Jane Austen', 'Austen, Jane', '')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-04-16 10:22:36,696]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:22:36,698]  INFO {cps.admin:1750} Calibre Database changed, all Calibre-Web info related to old Database gets deleted
+[2025-04-16 10:22:36,710]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:23:00,677]  INFO {cps.ub:764} Book 1 readbit toggled
+[2025-04-16 10:24:38,567] ERROR {cps.editbooks:167} Database error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO authors (name, sort, link) VALUES (?, ?, ?)]
+[parameters: ('Jane Austen', 'Austen, Jane', '')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-04-16 10:28:11,726]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_1, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,727]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_2, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,729]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_3, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,729]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_4, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,730]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_5, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,731]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_6, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,731]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_8, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,732]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_9, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,733]  WARN {py.warnings:110} /app/calibre-web/cps/db.py:586: SAWarning: This declarative base already contains a class with the same class name and module name as cps.db.custom_column_10, and will be replaced in the string-lookup table.
+  cc_classes[row.id] = type(str('custom_column_' + str(row.id)), (Base,), ccdict)
+
+[2025-04-16 10:28:11,753]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-04-16 10:28:19,020]  WARN {py.warnings:110} /app/calibre-web/cps/editbooks.py:1405: SAWarning: Object of type <Books> not in session, add operation along 'Authors.books' won't proceed (This warning originated from the Session 'autoflush' process, which was invoked automatically in response to a user-initiated operation. Consider using ``no_autoflush`` context manager if this warning happended while initializing objects.)
+  db_element = db_session.query(db_object).filter((func.lower(db_filter).ilike(add_element))).all()
+
+[2025-04-16 10:28:19,022]  WARN {py.warnings:110} /app/calibre-web/cps/editbooks.py:1405: SAWarning: Object of type <Books> not in session, add operation along 'Languages.books' won't proceed (This warning originated from the Session 'autoflush' process, which was invoked automatically in response to a user-initiated operation. Consider using ``no_autoflush`` context manager if this warning happended while initializing objects.)
+  db_element = db_session.query(db_object).filter((func.lower(db_filter).ilike(add_element))).all()
+
+[2025-04-16 10:28:19,024]  WARN {py.warnings:110} /app/calibre-web/cps/editbooks.py:1405: SAWarning: Object of type <Books> not in session, add operation along 'Tags.books' won't proceed (This warning originated from the Session 'autoflush' process, which was invoked automatically in response to a user-initiated operation. Consider using ``no_autoflush`` context manager if this warning happended while initializing objects.)
+  db_element = db_session.query(db_object).filter((func.lower(db_filter).ilike(add_element))).all()
+
+[2025-04-16 10:28:35,193]  INFO {cps.ub:764} Book 9 archive bit toggled
+[2025-04-16 10:30:12,495] ERROR {cps.helper:390} Deleting book 13 from database only, book path in database not valid: Norbert Halagal/book11 (13)
+[2025-04-16 10:30:27,859] ERROR {cps.helper:390} Deleting book 3 from database only, book path in database not valid: Asterix Lionherd/comicdemo (3)
+[2025-04-16 10:30:34,264] ERROR {cps.helper:390} Deleting book 1 from database only, book path in database not valid: Frodo Beutlin/Der Buchtitel (1)
+[2025-04-16 10:30:37,833] ERROR {cps.helper:390} Deleting book 4 from database only, book path in database not valid: Peter Parker/Very long extra super turbo cool tit (4)
+[2025-04-16 10:30:40,806] ERROR {cps.helper:390} Deleting book 5 from database only, book path in database not valid: John Doe/testbook (5)
+[2025-04-16 10:30:43,699] ERROR {cps.helper:390} Deleting book 7 from database only, book path in database not valid: John Doe/Buuko (7)
+[2025-04-16 10:30:46,550] ERROR {cps.helper:390} Deleting book 8 from database only, book path in database not valid: Leo Baskerville/book8 (8)
+[2025-04-16 10:30:51,815] ERROR {cps.helper:390} Deleting book 9 from database only, book path in database not valid: Sigurd Lindgren/book6 (9)
+[2025-04-16 10:30:54,769] ERROR {cps.helper:390} Deleting book 10 from database only, book path in database not valid: Peter Parker/book7 (10)
+[2025-04-16 10:30:57,632] ERROR {cps.helper:390} Deleting book 11 from database only, book path in database not valid: Hector Goncalves/book9 (11)
+[2025-04-16 10:31:01,001] ERROR {cps.helper:390} Deleting book 12 from database only, book path in database not valid: Lulu de Marco/book10 (12)
+[2025-04-16 10:31:10,422]  INFO {cps.web:1237} Serving book: Pride and Prejudice - Jane Austen
+[2025-04-16 10:31:11,233]  INFO {cps.web:1237} Serving book: Pride and Prejudice - Jane Austen
+[2025-04-16 10:32:01,229]  INFO {cps.server:319} webserver stop (restart=False)
+[2025-04-16 10:32:01,230]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
+[2025-04-16 10:32:02,233]  INFO {cps.server:298} Performing shutdown of Calibre-Web
