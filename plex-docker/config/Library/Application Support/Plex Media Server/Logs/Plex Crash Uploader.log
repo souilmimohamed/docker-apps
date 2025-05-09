@@ -1,5 +1,0 @@
-May 09, 2025 11:22:23.706 [140142358068024] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1746803797 Duration: 346 UserId: mohamed.souilmi.work@gmail.com Version: 1.41.6.9685-d301f511a
-May 09, 2025 11:22:23.705 [140142385981448] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-May 09, 2025 11:22:23.826 [140142357830456] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.1s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-May 09, 2025 11:22:23.827 [140142385981448] INFO - Successfully reported session health
-May 09, 2025 11:22:23.827 [140142385981448] INFO - Crash Uploader - Processing Complete.
