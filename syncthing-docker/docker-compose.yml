@@ -1,0 +1,18 @@
+services:
+  syncthing:
+    image: syncthing/syncthing:latest
+    container_name: syncthing
+    hostname: my-syncthing
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    volumes:
+      - ./syncthing/config:/var/syncthing/config
+      - ./syncthing/data:/var/syncthing/data
+    ports:
+      - "8384:8384"  # Web UI
+      - "22000:22000"  # TCP file transfer
+      - "22000:22000/udp"  # UDP file transfer
+      - "21027:21027/udp"  # Discovery broadcasts
+    restart: unless-stopped
