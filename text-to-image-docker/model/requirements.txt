@@ -1,0 +1,10 @@
+fastapi==0.104.0
+uvicorn==0.23.2
+diffusers==0.23.1
+transformers==4.34.0
+accelerate==0.23.0
+pydantic==2.4.2
+pillow==10.0.1
+numpy==1.26.0
+# The following packages are for memory optimization on CPU systems
+psutil==5.9.5
