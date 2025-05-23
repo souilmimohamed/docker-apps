@@ -1,0 +1,19 @@
+services:
+  fileserver:
+    image: filebrowser/filebrowser:latest
+    container_name: fileserver
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/srv  # Mount for files
+      - filebrowser_db:/database  # Named volume for the database directory
+      - ./settings.json:/config/settings.json
+    restart: unless-stopped
+    environment:
+      - FB_DATABASE=/database/filebrowser.db  # Explicitly set database path
+      - FB_BASEURL=/
+      - FB_NOAUTH=false
+      - FB_PORT=80
+
+volumes:
+  filebrowser_db:  # Define the named volume

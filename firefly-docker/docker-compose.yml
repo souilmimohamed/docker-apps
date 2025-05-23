@@ -1,0 +1,28 @@
+services:
+  app:
+    image: fireflyiii/core:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - firefly_iii_upload:/var/www/firefly-iii/storage/upload
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:latest
+    volumes:
+      - firefly_iii_db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+
+  redis:
+    image: redis:alpine
+
+volumes:
+  firefly_iii_upload:
+  firefly_iii_db:

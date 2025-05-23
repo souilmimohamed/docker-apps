@@ -1,0 +1,32 @@
+services:
+  synapse:
+    image: matrixdotorg/synapse:latest
+    container_name: synapse
+    restart: unless-stopped
+    volumes:
+      - ./synapse/data:/data
+    environment:
+      - SYNAPSE_SERVER_NAME=matrix.local
+      - SYNAPSE_REPORT_STATS=no
+      - SYNAPSE_CONFIG_PATH=/data/homeserver.yaml
+    ports:
+      - "8008:8008" # HTTP port for client-server API
+    networks:
+      - matrix-network
+
+  element-web:
+    image: vectorim/element-web:latest
+    container_name: element-web
+    restart: unless-stopped
+    volumes:
+      - ./element/config.json:/app/config.json
+    ports:
+      - "8080:80" # Web interface port
+    depends_on:
+      - synapse
+    networks:
+      - matrix-network
+
+networks:
+  matrix-network:
+    driver: bridge

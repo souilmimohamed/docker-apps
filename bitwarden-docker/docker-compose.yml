@@ -1,0 +1,28 @@
+services:
+  bitwarden:
+    image: vaultwarden/server:latest
+    container_name: bitwarden
+    restart: always
+    volumes:
+      - ./bw-data:/data
+    ports:
+      - "8080:80"
+      - "8443:443" # Only needed if you want to use HTTPS
+    environment:
+      - WEBSOCKET_ENABLED=true  # Enable WebSocket notifications
+      - SIGNUPS_ALLOWED=true    # Set to false to disable new user signups
+      - ADMIN_TOKEN=your_secure_admin_token=Qx5My9LJXwaleo1YgkA+G7XDqTQIZ6O/g4ScqFY/25fey8de1UbsZq0qcfY7sfz+
+  # Reverse proxy for proper HTTPS
+  nginx:
+    image: nginx:latest
+    container_name: bitwarden-nginx
+    restart: always
+    depends_on:
+      - bitwarden
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/www:/var/www/html

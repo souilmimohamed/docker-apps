@@ -1,0 +1,28 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    # Commenting out the user setting to let container run as root
+    # user: 1000:1000
+    restart: unless-stopped
+    networks:
+      - jellyfin
+    volumes:
+      - type: bind
+        source: ./config
+        target: /config
+        bind:
+          create_host_path: true
+      - ./cache:/cache
+      - ./media:/media  # Replace with your actual media path
+    ports:
+      - 8096:8096  # HTTP port
+      - 8920:8920  # HTTPS port
+      - 7359:7359/udp  # Local network discovery
+      - 1900:1900/udp  # DLNA discovery
+    environment:
+      - TZ=America/New_York  # Change to your timezone
+
+networks:
+  jellyfin:
+    driver: bridge

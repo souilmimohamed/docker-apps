@@ -1,0 +1,37 @@
+{
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "http://localhost:8008",
+            "server_name": "matrix.local"
+        },
+        "m.identity_server": {
+            "base_url": ""
+        }
+    },
+    "disable_custom_urls": false,
+    "disable_guests": false,
+    "disable_login_language_selector": false,
+    "disable_3pid_login": false,
+    "brand": "Element",
+    "integrations_ui_url": "",
+    "integrations_rest_url": "",
+    "integrations_widgets_urls": [],
+    "bug_report_endpoint_url": "",
+    "defaultCountryCode": "US",
+    "showLabsSettings": false,
+    "features": {},
+    "default_federate": true,
+    "default_theme": "light",
+    "room_directory": {
+        "servers": ["matrix.local"]
+    },
+    "enable_presence_by_hs_url": {
+        "https://matrix.local": false
+    },
+    "settingDefaults": {
+        "breadcrumbs": true
+    },
+    "jitsi": {
+        "preferred_domain": "meet.element.io"
+    }
+}

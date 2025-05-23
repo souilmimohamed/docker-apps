@@ -1,0 +1,50 @@
+services:
+  photoprism:
+    image: photoprism/photoprism:latest
+    container_name: photoprism
+    depends_on:
+      - mariadb
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+    ports:
+      - "2342:2342" # HTTP port (adjust as needed)
+    environment:
+      PHOTOPRISM_ADMIN_PASSWORD: "yourpassword"      # Initial admin password
+      PHOTOPRISM_SITE_URL: "http://localhost:2342/"  # Server URL
+      PHOTOPRISM_ORIGINALS_LIMIT: 5000               # File size limit for originals in MB
+      PHOTOPRISM_HTTP_COMPRESSION: "gzip"            # Compression (gzip or none)
+      PHOTOPRISM_DEBUG: "false"                      # Debug mode
+      PHOTOPRISM_PUBLIC: "false"                     # Public mode
+      PHOTOPRISM_READONLY: "false"                   # Read-only mode
+      PHOTOPRISM_EXPERIMENTAL: "false"               # Experimental features
+      PHOTOPRISM_DISABLE_WEBDAV: "false"             # WebDAV server
+      PHOTOPRISM_DISABLE_SETTINGS: "false"           # Settings UI
+      PHOTOPRISM_DISABLE_TENSORFLOW: "false"         # TensorFlow for image classification
+      PHOTOPRISM_DISABLE_FACES: "false"              # Face detection
+      PHOTOPRISM_DISABLE_CLASSIFICATION: "false"     # Image classification
+      PHOTOPRISM_DARKTABLE_PRESETS: "false"          # Darktable presets
+      PHOTOPRISM_DETECT_NSFW: "false"                # NSFW photo detection
+      PHOTOPRISM_UPLOAD_NSFW: "true"                 # Allow uploads that may be offensive
+      PHOTOPRISM_DATABASE_DRIVER: "mysql"            # Database driver (mysql or sqlite)
+      PHOTOPRISM_DATABASE_SERVER: "mariadb:3306"     # Database server (hostname:port)
+      PHOTOPRISM_DATABASE_NAME: "photoprism"         # Database schema name
+      PHOTOPRISM_DATABASE_USER: "photoprism"         # Database user name
+      PHOTOPRISM_DATABASE_PASSWORD: "photoprism"     # Database user password 
+    volumes:
+      - "./originals:/photoprism/originals"          # Original media files
+      - "./storage:/photoprism/storage"              # Storage folder for cache, database backups, and sidecar files
+      
+  mariadb:
+    image: mariadb:10.6
+    container_name: photoprism-mariadb
+    restart: unless-stopped
+    command: mysqld --transaction-isolation=READ-COMMITTED --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - "./database:/var/lib/mysql"                  # Database files
+    environment:
+      MYSQL_ROOT_PASSWORD: photoprism
+      MYSQL_DATABASE: photoprism
+      MYSQL_USER: photoprism
+      MYSQL_PASSWORD: photoprism
