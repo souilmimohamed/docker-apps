@@ -1,0 +1,9 @@
+services:
+  koodo:
+    image: liwangsheng/koodo-reader:latest
+    container_name: koodo-reader
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/usr/share/nginx/html/data
+    restart: unless-stopped
