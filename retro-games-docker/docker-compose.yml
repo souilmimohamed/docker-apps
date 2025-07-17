@@ -1,0 +1,9 @@
+services:
+  retroarch:
+    image: blaize/retroarch
+    container_name: retroarch
+    ports:
+      - "8080:80"
+    volumes:
+      - /roms:/roms
+    restart: unless-stopped
