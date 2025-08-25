@@ -1,0 +1,23 @@
+services:
+  invokeai:
+    image: ghcr.io/invoke-ai/invokeai:latest
+    container_name: invokeai
+    # Bind only to localhost for security
+    ports:
+      - "127.0.0.1:9090:9090"
+    environment:
+      # Persist data (models, outputs, config) under /data in the container
+      - INVOKEAI_ROOT=/data
+      # Force **CPU** execution
+      - INVOKEAI_DEVICE=cpu
+      # Bind UI inside container
+      - INVOKEAI_HOST=0.0.0.0
+      - INVOKEAI_PORT=9090
+      # Use sliced attention to reduce RAM usage on CPU
+      - INVOKEAI_ATTENTION_TYPE=sliced
+      # Optional: let InvokeAI fetch HF models that require auth
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    volumes:
+      # Persist everything to a local folder
+      - ./invokeai:/data
+    restart: unless-stopped
