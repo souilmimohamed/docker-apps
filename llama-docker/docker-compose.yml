@@ -1,0 +1,29 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    environment:
+      - OLLAMA_NUM_GPU=0 # force CPU-only
+      - OLLAMA_ORIGINS=* # allow WebUI to call the API
+    volumes:
+      - ollama:/root/.ollama # persist downloaded models
+    ports:
+      - "11434:11434" # Ollama API
+
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:latest
+    container_name: open-webui
+    depends_on:
+      - ollama
+    restart: unless-stopped
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434 # point WebUI at Ollama service
+    ports:
+      - "3000:8080" # Web UI on http://localhost:3000
+    volumes:
+      - openwebui:/app/backend/data # persist chats/settings
+
+volumes:
+  ollama:
+  openwebui:
